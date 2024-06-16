@@ -1,0 +1,110 @@
+[
+  {
+    "id": "4e00db76-c9fc-45dc-b651-ed64e077a455",
+    "price": 14900000,
+    "model": {
+      "brand": "Honda",
+      "name": "BeAT",
+      "year": 2013,
+      "color": "Biru",
+      "mileage": 10000
+    },
+    "city": "Depok",
+    "service_book": false,
+    "stnk": true,
+    "bpkb": true,
+    "title": "Honda BeAT CBS 2013",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://images.tokopedia.net/img/cache/700/hDjmkQ/2022/6/29/dd7a6e03-3c54-42f6-b929-ac4a911e9ad1.jpg"
+  },
+  {
+    "id": "0770795b-eba2-456b-9e79-b3aaa7cc70ff",
+    "price": 25000000,
+    "model": {
+      "brand": "Honda",
+      "name": "CBR150R",
+      "year": 2021,
+      "color": "Merah",
+      "mileage": 10000
+    },
+    "city": "Bekasi Kota",
+    "service_book": true,
+    "stnk": true,
+    "bpkb": true,
+    "title": "Honda CBR150R 2021",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://asset.kompas.com/crops/FOmHAm-IdZKpYiUXpqcX9_yQ_ZE=/0x0:4152x2768/1200x800/data/photo/2021/01/13/5ffddb11e702c.jpg"
+  },
+  {
+    "id": "43246c99-d580-49f9-b0f3-85a3e30928dc",
+    "price": 28800000,
+    "model": {
+      "brand": "Honda",
+      "name": "PCX160",
+      "year": 2021,
+      "color": "Hitam",
+      "mileage": 38000
+    },
+    "city": "Tangerang Selatan",
+    "service_book": false,
+    "stnk": true,
+    "bpkb": true,
+    "title": "Honda PCX160 CBS 2021",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://imgx.gridoto.com/crop/0x0:0x0/700x465/photo/2020/12/09/2081444633.png"
+  },
+  {
+    "id": "76861648-60c0-4cc4-87d8-1ac09b568d4c",
+    "price": 10000000,
+    "model": {
+      "brand": "Honda",
+      "name": "RevoFit",
+      "year": 2023,
+      "color": "Hitam",
+      "mileage": 5000
+    },
+    "city": "Jakarta Timur",
+    "service_book": true,
+    "stnk": true,
+    "bpkb": true,
+    "title": "Honda RevoFit 2023",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://imgx.gridoto.com/crop/73x101:1232x819/700x465/photo/2020/02/04/718388953.jpg"
+  },
+  {
+    "id": "02bafc63-53c7-4767-a0aa-4d62f799c07d",
+    "price": 14800000,
+    "model": {
+      "brand": "Honda",
+      "name": "Vario125",
+      "year": 2017,
+      "color": "Putih",
+      "mileage": 50440
+    },
+    "city": "Depok",
+    "service_book": false,
+    "stnk": true,
+    "bpkb": true,
+    "title": "Honda Vario125 CBS 2017",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://www.otoinfo.id/wp-content/uploads/2023/11/imresizer-1700464634223.jpg"
+  },
+  {
+    "id": "b8115774-6c87-498c-93ab-a8fd04584e7b",
+    "price": 5900000,
+    "model": {
+      "brand": "Yamaha",
+      "name": "Vixion",
+      "year": 2015,
+      "color": "Merah",
+      "mileage": 35911
+    },
+    "city": "Jakarta Selatan",
+    "service_book": false,
+    "stnk": true,
+    "bpkb": true,
+    "title": "Yamaha Vixion Advance 2015",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://cdn.iwanbanaran.com/wp-content/uploads/2015/05/New-V-Ixion-Advance-Stizza-Black-Red.jpg"
+  }
+]

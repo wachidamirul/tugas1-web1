@@ -47,11 +47,11 @@
             </div>
 
             <div class="hidden w-full self-end px-4 lg:block lg:w-1/2">
-              <div class="relative lg:right-0">
+              <div class="flex justify-end">
                 <img
                   src="./images/hero.png"
                   alt="Hero Image"
-                  class="mx-auto h-auto w-[380px] max-w-full xl:w-[528px]"
+                  class="h-auto w-[380px] max-w-full xl:w-[628px]"
                 />
               </div>
             </div>
@@ -59,32 +59,96 @@
         </div>
       </section>
       <!-- Hero Section End -->
+
+      <!-- Search Section Start -->
+      <section class="relative z-10 -mt-16">
+        <div class="container">
+          <div class="rounded-3xl bg-background p-8 shadow-md">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="flex items-center justify-center gap-2 text-center">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  class="text-primary"
+                  height="24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6 5v1H4.667a1.75 1.75 0 00-1.743 1.598l-.826 9.5A1.75 1.75 0 003.84 19H16.16a1.75 1.75 0 001.743-1.902l-.826-9.5A1.75 1.75 0 0015.333 6H14V5a4 4 0 00-8 0zm4-2.5A2.5 2.5 0 007.5 5v1h5V5A2.5 2.5 0 0010 2.5zM7.5 10a2.5 2.5 0 005 0V8.75a.75.75 0 011.5 0V10a4 4 0 01-8 0V8.75a.75.75 0 011.5 0V10z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <p class="text-lg font-semibold leading-8 text-foreground">
+                  Tentukan motor yang kamu inginkan
+                </p>
+              </div>
+              <form
+                id="search-form"
+                class="mt-8 flex flex-row items-center justify-center gap-8"
+              >
+                <div class="basis-1/2">
+                  <select
+                    id="merek"
+                    class="block h-12 w-full rounded-lg border border-input bg-background px-4 py-2.5 text-base text-foreground focus:outline-ring focus:ring-primary"
+                  >
+                    <option default>Pilih merek</option>
+                  </select>
+                </div>
+                <div class="basis-1/2">
+                  <select
+                    id="model"
+                    class="block h-12 w-full rounded-lg border border-input bg-background px-4 py-2.5 text-base text-foreground focus:outline-ring focus:ring-primary"
+                  >
+                    <option default>Pilih model</option>
+                  </select>
+                </div>
+                <div class="basis-1/5">
+                  <button
+                    type="button"
+                    class="shadow-xs flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-center transition-all duration-500 hover:bg-primary/90"
+                  >
+                    <p class="text-base font-semibold text-background">Cari</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="text-background"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Search Section End -->
+
+      <!-- Product Section Start -->
+      <section class="mt-[60px]" id="product">
+        <div class="container">
+          <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+            <span class="font-bold text-primary" id="total-motor"></span>
+            tersedia untuk dibeli
+          </h2>
+        </div>
+      </section>
+      <!-- Product Section End -->
     </main>
-
-    <script>
-      var themeToggleBtn = document.getElementById("theme-toggle");
-
-      themeToggleBtn.addEventListener("click", function () {
-        if (localStorage.getItem("color-theme")) {
-          // if set via local storage previously
-          if (localStorage.getItem("color-theme") === "light") {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("color-theme", "dark");
-          } else {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("color-theme", "light");
-          }
-        } else {
-          // if NOT set via local storage previously
-          if (document.documentElement.classList.contains("dark")) {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("color-theme", "light");
-          } else {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("color-theme", "dark");
-          }
-        }
-      });
-    </script>
+    <script src="./js/global.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>
