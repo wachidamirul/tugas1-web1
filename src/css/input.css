@@ -49,6 +49,12 @@
   }
 }
 
+@layer components {
+  .footer-link {
+    @apply flex items-center gap-2 text-sm leading-5 text-muted-foreground;
+  }
+}
+
 @layer utilities {
   select {
     appearance: none;

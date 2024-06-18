@@ -9,7 +9,11 @@
     "build": "pnpm dlx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --minify"
   },
   "keywords": [],
-  "author": "",
+  "author": "wachidamirul",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/wachidamirul/tugas1-web1"
+  },
   "license": "ISC",
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

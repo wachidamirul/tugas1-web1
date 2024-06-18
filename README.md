@@ -4,10 +4,10 @@ Matkul : Pemrograman Web 1 </br> Prodi : Teknik Informatika
 
 ## Table of contents
 
-- [Questions](#questions)
+- [Task](#task)
 - [Getting started](#getting-started)
 
-## Questions
+## Task
 
 Buatlah tampilan web seperti di bawah ini ![home page](./src/images/1.png) Lalu
 tambahkan beberapa menu dan sub menu berupa merk semua motor dari yamaha sampai
@@ -23,6 +23,8 @@ akan memunculkan tampilan form buku tamu yang isinya nama,email dan pertanyaan
 > Ket : boleh di kreasikan dengan bentuk atau warna lain dengan css/bootstrap
 
 ## Getting started
+
+Website sederhana yang dikembangkan untuk platform jual beli motor. Menggunakan file [data.js](./public/js/data.js) sebagai sumber data untuk mengelola informasi produk. Fitur utama mencakup pencarian motor berdasarkan brand dan model, serta menampilkan detail dari setiap motor yang tersedia.
 
 ### Installation
 

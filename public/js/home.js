@@ -15,10 +15,16 @@ const getVehicles = () => {
     currentPage = 1;
     localStorage.setItem("home-current-page", 1);
   }
-  const itemsPerPage = 2;
+  const itemsPerPage = 4; // set items per page
   const totalPages = Math.ceil(data.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
+
+  let endIndex;
+  if (currentPage == totalPages) {
+    endIndex = countData;
+  } else {
+    endIndex = startIndex + itemsPerPage;
+  }
 
   // get count
   setCountVehicles(countData);
