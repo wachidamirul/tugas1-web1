@@ -20,7 +20,7 @@ produk dan spesifikasi produk
 ![home page](./src/images/3.png) Lalu tambahkan tombol contact yang saat di klik
 akan memunculkan tampilan form buku tamu yang isinya nama,email dan pertanyaan
 
-> Ket : boleh di kreasikan dengan bentuk atau warna lain dengan css/bootstrap<
+> Ket : boleh di kreasikan dengan bentuk atau warna lain dengan css/bootstrap
 
 ## Getting started
 
@@ -28,11 +28,29 @@ akan memunculkan tampilan form buku tamu yang isinya nama,email dan pertanyaan
 
 ```shell
 pnpm install
-pnpm dev
+pnpm watch
 ```
 
 ### Build
 
 ```shell
 pnpm build
+```
+
+### Configuration after build
+
+Change **_global.css_** with **_style.css_**
+
+```html
+<!-- Before -->
+<link href="./css/global.css" rel="stylesheet" />
+
+<!-- After -->
+<link href="./css/style.css" rel="stylesheet" />
+```
+
+### Running with http server
+
+```shell
+pnpm start
 ```

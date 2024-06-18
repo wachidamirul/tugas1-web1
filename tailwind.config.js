@@ -14,6 +14,8 @@ module.exports = {
         inter: ['"Inter"', ...defaultTheme.fontFamily.sans],
       },
       screens: {
+        xxs: { min: "320px", max: "424px" },
+        xs: { min: "425px", max: "639px" },
         "2xl": "1320px",
       },
       colors: {
@@ -42,5 +44,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };

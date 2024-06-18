@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm dlx tailwindcss -i ./src/css/input.css -o ./public/css/global.css --watch",
-    "build": "pnpm dlx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --minify",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server ./public -p 9000",
+    "watch": "pnpm dlx tailwindcss -i ./src/css/input.css -o ./public/css/global.css --watch",
+    "build": "pnpm dlx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "autoprefixer": "^10.4.19",
+    "http-server": "^14.1.1",
     "postcss": "^8.4.38",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.4",

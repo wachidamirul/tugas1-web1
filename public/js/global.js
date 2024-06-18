@@ -1,4 +1,4 @@
-function toggleDarkMode() {
+const toggleDarkMode = () => {
   if (localStorage.getItem("color-theme")) {
     // if set via local storage previously
     if (localStorage.getItem("color-theme") === "light") {
@@ -18,4 +18,19 @@ function toggleDarkMode() {
       localStorage.setItem("color-theme", "dark");
     }
   }
-}
+};
+
+const formatCurrency = (number) => {
+  return new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    minimumFractionDigits: 0,
+  }).format(number);
+};
+
+const formatDecimal = (number) => {
+  return new Intl.NumberFormat("id-ID", {
+    style: "decimal",
+    minimumFractionDigits: 0,
+  }).format(number);
+};

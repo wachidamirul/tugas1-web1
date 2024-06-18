@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lapak Motor</title>
-
+    <meta name="Description" content="Lapak Motor" />
+    <link rel="icon" type="image/png" href="./images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +27,7 @@
     </script>
   </head>
   <body class="font-inter antialiased">
-    <main class="bg-background dark:bg-background">
+    <main class="bg-background pb-8 dark:bg-background">
       <!-- Hero Section Start -->
       <section class="bg-gradient-to-b from-indigo-100 to-background" id="hero">
         <div class="container">
@@ -38,7 +39,7 @@
                 Butuh beli atau jual motor dengan harga fair?
               </h2>
               <p
-                class="mt-1 text-sm text-muted-foreground md:mt-2 md:text-base lg:mt-3 lg:text-foreground xl:text-lg"
+                class="mt-2 text-sm text-muted-foreground md:text-base lg:mt-3 lg:text-foreground xl:text-lg"
               >
                 Dengan
                 <span class="font-bold text-primary">Lapak Motor</span> temukan
@@ -51,7 +52,7 @@
                 <img
                   src="./images/hero.png"
                   alt="Hero Image"
-                  class="h-auto w-[380px] max-w-full xl:w-[628px]"
+                  class="h-auto w-[480px] max-w-full xl:w-[628px]"
                 />
               </div>
             </div>
@@ -61,10 +62,10 @@
       <!-- Hero Section End -->
 
       <!-- Search Section Start -->
-      <section class="relative z-10 -mt-16">
+      <section class="relative z-10 mt-5 lg:-mt-10 xl:-mt-16">
         <div class="container">
-          <div class="rounded-3xl bg-background p-8 shadow-md">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="rounded-3xl bg-background p-6 shadow-md lg:p-8">
+            <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
               <div class="flex items-center justify-center gap-2 text-center">
                 <svg
                   stroke="currentColor"
@@ -83,31 +84,35 @@
                     clip-rule="evenodd"
                   />
                 </svg>
-                <p class="text-lg font-semibold leading-8 text-foreground">
-                  Tentukan motor yang kamu inginkan
+                <p
+                  class="text-base font-semibold leading-8 text-foreground md:text-lg"
+                >
+                  Cari motor yang kamu inginkan
                 </p>
               </div>
               <form
                 id="search-form"
-                class="mt-8 flex flex-row items-center justify-center gap-8"
+                class="mt-8 flex flex-col items-center justify-center gap-3 md:flex-row"
               >
-                <div class="basis-1/2">
+                <div class="w-full md:basis-1/2">
                   <select
                     id="merek"
                     class="block h-12 w-full rounded-lg border border-input bg-background px-4 py-2.5 text-base text-foreground focus:outline-ring focus:ring-primary"
+                    onchange="getModel()"
                   >
-                    <option default>Pilih merek</option>
+                    <option value="null">Pilih merek</option>
                   </select>
                 </div>
-                <div class="basis-1/2">
+                <div class="w-full md:basis-1/2">
                   <select
                     id="model"
-                    class="block h-12 w-full rounded-lg border border-input bg-background px-4 py-2.5 text-base text-foreground focus:outline-ring focus:ring-primary"
+                    class="block h-12 w-full cursor-not-allowed rounded-lg border border-input bg-background px-4 py-2.5 text-base text-foreground focus:outline-ring focus:ring-primary"
+                    disabled
                   >
-                    <option default>Pilih model</option>
+                    <option value="null">Pilih model</option>
                   </select>
                 </div>
-                <div class="basis-1/5">
+                <div class="w-full basis-1/5">
                   <button
                     type="button"
                     class="shadow-xs flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-center transition-all duration-500 hover:bg-primary/90"
@@ -144,11 +149,85 @@
             <span class="font-bold text-primary" id="total-motor"></span>
             tersedia untuk dibeli
           </h2>
+
+          <div
+            class="my-10 grid grid-cols-1 gap-y-3 sm:grid-cols-3 sm:gap-x-4 sm:gap-y-5 lg:grid-cols-4 xl:gap-6 xs:grid-cols-2 xs:gap-x-3 xs:gap-y-4"
+            id="product-list"
+          ></div>
+
+          <!-- Pagination -->
+          <div
+            class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6"
+            id="wrap-pagination"
+          >
+            <div
+              class="flex flex-1 items-center justify-center sm:justify-between"
+            >
+              <div class="hidden sm:block">
+                <p class="text-sm text-gray-700">
+                  Showing
+                  <span class="font-medium" id="start-item"></span>
+                  to
+                  <span class="font-medium" id="end-item"></span>
+                  of
+                  <span class="font-medium" id="total-item"></span>
+                  results
+                </p>
+              </div>
+              <div>
+                <nav
+                  class="isolate inline-flex -space-x-px rounded-md shadow-sm"
+                  aria-label="Pagination"
+                >
+                  <button
+                    type="button"
+                    class="relative inline-flex items-center rounded-l-md px-2 py-2 text-muted-foreground ring-1 ring-inset ring-gray-300 hover:bg-primary/10 focus:z-20 focus:outline-offset-0"
+                    id="prev-page"
+                    onclick="showPrevPage()"
+                  >
+                    <svg
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <div id="pagination"></div>
+                  <button
+                    type="button"
+                    class="relative inline-flex items-center rounded-l-md px-2 py-2 text-muted-foreground ring-1 ring-inset ring-gray-300 hover:bg-primary/10 focus:z-20 focus:outline-offset-0"
+                    id="next-page"
+                    onclick="showNextPage()"
+                  >
+                    <svg
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Product Section End -->
     </main>
-    <script src="./js/global.js"></script>
-    <script src="./js/home.js"></script>
+    <script type="text/javascript" src="./js/global.js"></script>
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/javascript" src="./js/home.js"></script>
   </body>
 </html>
