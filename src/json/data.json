@@ -106,5 +106,23 @@
     "title": "All New Vixion 155 R",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
     "vehicle_images": "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2022011109443040020G78018.png"
+  },
+  {
+    "id": "b8115774-6c87-498c-93ab-a8fd04584e7b",
+    "price": 33150000,
+    "model": {
+      "brand": "Suzuki",
+      "name": "GSXR150",
+      "year": 2015,
+      "color": "Merah",
+      "mileage": 35911
+    },
+    "city": "Jakarta Selatan",
+    "service_book": true,
+    "stnk": true,
+    "bpkb": true,
+    "title": "All New Vixion 155 R",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2022011109443040020G78018.png"
   }
 ]

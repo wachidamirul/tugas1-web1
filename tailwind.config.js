@@ -42,6 +42,20 @@ module.exports = {
         ring: "hsl(var(--ring) / <alpha-value>)",
         radius: "hsl(var(--radius) / <alpha-value>)",
       },
+      keyframes: {
+        slideUp: {
+          "0%": { transform: "translateY(50%)" },
+          "50%": { transform: "translateY(0)" },
+        },
+        slideDown: {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(50%)" },
+        },
+      },
+      animation: {
+        slideUp: "slideUp 0.5s ease-in-out",
+        slideDown: "slideDown 0.5s ease-in-out",
+      },
     },
   },
   plugins: [

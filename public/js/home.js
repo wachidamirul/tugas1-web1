@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const getVehicles = () => {
-  const data = JSON.parse(database);
+  const data = JSON.parse(products);
   const countData = data.length;
 
   let currentPage;
@@ -166,7 +166,7 @@ const showNextPage = () => {
 };
 
 const getMerek = () => {
-  var data = JSON.parse(database);
+  var data = JSON.parse(products);
   const merek = document.getElementById("merek");
 
   let brands = data.map((item) => item.model.brand);
@@ -178,7 +178,7 @@ const getMerek = () => {
 };
 
 const getModel = () => {
-  var data = JSON.parse(database);
+  var data = JSON.parse(products);
   const merek = document.getElementById("merek");
   const model = document.getElementById("model");
 

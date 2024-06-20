@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="sc">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lapak Motor</title>
-    <meta name="Description" content="Lapak Motor" />
+    <title>LapakMotor</title>
+    <meta name="Description" content="LapakMotor" />
     <link rel="icon" type="image/png" href="./images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +28,59 @@
   </head>
   <body class="font-inter antialiased">
     <main class="bg-background dark:bg-background">
+      <!-- Header Section Start -->
+      <header
+        class="absolute left-0 top-0 z-50 flex w-full flex-col items-center bg-transparent"
+      >
+        <div class="container relative">
+          <div class="flex items-center justify-between py-4">
+            <h1 class="text-lg font-bold text-primary">
+              <a href="./index.html" class="block">LapakMotor</a>
+            </h1>
+
+            <ul
+              class="hidden gap-x-6 md:flex md:items-center"
+              id="nav-menu"
+            ></ul>
+
+            <div class="hidden md:flex md:items-center">
+              <button
+                type="button"
+                class="shadow-xs cursor-pointer rounded-full bg-primary px-6 py-2 text-sm font-medium text-white transition-all duration-500 hover:bg-primary/90"
+              >
+                Kontak
+              </button>
+            </div>
+
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              onclick="hamburger()"
+              class="absolute right-4 block md:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+          </div>
+
+          <div
+            class="pointer-events-none absolute right-0 top-[60px] w-60 translate-y-full transform rounded-md bg-background opacity-0 shadow-lg transition-opacity duration-300 ease-in-out"
+            id="mobile-menu"
+          >
+            <ul class="p-4" id="mobile-nav-menu"></ul>
+          </div>
+        </div>
+      </header>
+      <!-- Header Section End -->
+
       <!-- Hero Section Start -->
       <section class="bg-gradient-to-b from-indigo-100 to-background" id="hero">
         <div class="container">
@@ -36,13 +89,13 @@
               <h2
                 class="text-2xl font-bold leading-[110%] tracking-[-0.96px] text-foreground md:text-3xl lg:text-4xl lg:leading-[115%] xl:text-5xl xl:leading-[120%]"
               >
-                Butuh beli atau jual motor dengan harga fair?
+                Ingin beli motor dengan dengan harga fair?
               </h2>
               <p
                 class="mt-2 text-sm text-muted-foreground md:text-base lg:mt-3 lg:text-foreground xl:text-lg"
               >
                 Dengan
-                <span class="font-bold text-primary">Lapak Motor</span> temukan
+                <span class="font-bold text-primary">LapakMotor</span> temukan
                 harga bagus dari motor yang kamu cari
               </p>
             </div>
@@ -165,13 +218,13 @@
             >
               <div class="hidden sm:block">
                 <p class="text-sm text-gray-700">
-                  Showing
+                  Menampilkan
                   <span class="font-medium" id="start-item"></span>
-                  to
+                  -
                   <span class="font-medium" id="end-item"></span>
-                  of
+                  dari
                   <span class="font-medium" id="total-item"></span>
-                  results
+                  hasil
                 </p>
               </div>
               <div>
@@ -233,24 +286,23 @@
             <div class="flex-1">
               <div class="max-w-lg">
                 <h1 class="text-3xl font-bold leading-relaxed text-primary">
-                  Lapak Motor
+                  LapakMotor
                 </h1>
                 <p
                   class="mb-1 text-sm font-medium leading-relaxed text-foreground"
                 >
-                  &copy; 2024 Lapak Motor. All Rights Reserved.
+                  &copy; 2024 LapakMotor. All Rights Reserved.
                 </p>
                 <p
                   class="text-xs font-medium leading-relaxed text-muted-foreground"
                 >
-                  Kami senang melakukan apa yang kami lakukan karena Lapak Motor
-                  dapat membantu kamu menemukan harga yang pas untuk jual atau
-                  beli motor second kamu.
+                  Kami senang melakukan apa yang kami lakukan karena LapakMotor
+                  dapat membantu kamu menemukan harga yang pas dan terjangkau.
                 </p>
               </div>
             </div>
             <div
-              class="flex flex-1 flex-col justify-center gap-8 sm:flex-row sm:gap-16 lg:mx-0 xs:flex-row"
+              class="flex flex-1 flex-col justify-center gap-8 sm:flex-row sm:gap-16 lg:mx-0"
             >
               <div class="flex-1">
                 <div class="mb-2 text-base text-foreground">Tentang Kami</div>
@@ -397,7 +449,7 @@
       <!-- Footer End -->
     </main>
     <script type="text/javascript" src="./js/global.js"></script>
-    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/javascript" src="./js/products.js"></script>
     <script type="text/javascript" src="./js/home.js"></script>
   </body>
 </html>
