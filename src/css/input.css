@@ -72,7 +72,7 @@
   }
 
   .footer-link {
-    @apply flex items-center gap-2 text-sm leading-5 text-muted-foreground;
+    @apply flex items-center gap-2 text-sm leading-5 text-muted-foreground hover:text-primary;
   }
 }
 

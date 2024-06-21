@@ -80,207 +80,65 @@
       </header>
       <!-- Header Section End -->
 
-      <!-- Hero Section Start -->
-      <section class="bg-gradient-to-b from-indigo-100 to-background" id="hero">
+      <!-- Kontak Section Start -->
+      <section class="pt-36" id="kontak">
         <div class="container">
-          <div class="flex flex-wrap items-center justify-between pt-36">
-            <div class="w-full self-center text-center lg:w-1/2 lg:text-left">
-              <h2
-                class="text-2xl font-bold leading-[110%] tracking-[-0.96px] text-foreground md:text-3xl lg:text-4xl lg:leading-[115%] xl:text-5xl xl:leading-[120%]"
-              >
-                Ingin beli motor dengan dengan harga fair?
-              </h2>
-              <p
-                class="mt-2 text-sm text-muted-foreground md:text-base lg:mt-3 lg:text-foreground xl:text-lg"
-              >
-                Dengan
-                <span class="font-bold text-primary">LapakMotor</span> temukan
-                harga bagus dari motor yang kamu cari
+          <div
+            class="mx-auto grid max-w-4xl items-start gap-16 p-4 sm:grid-cols-2"
+          >
+            <div>
+              <div class="mb-10">
+                <img
+                  src="./images/kontak.svg"
+                  alt="kontak"
+                  class="h-auto w-56 object-contain"
+                />
+              </div>
+              <h1 class="text-3xl font-bold text-foreground">
+                Punya pertanyaan untuk
+                <span class="text-primary">LapakMotor</span> ?
+              </h1>
+              <p class="mt-4 text-sm text-muted-foreground">
+                Jangan ragu untuk Isi form berikut. Tinggalkan nama dan email
+                kamu agar selalu update harga motor second terbaru !
               </p>
             </div>
 
-            <div class="hidden w-full self-end px-4 lg:block lg:w-1/2">
-              <div class="flex justify-end">
-                <img
-                  src="./images/hero.png"
-                  alt="Hero Image"
-                  class="h-auto w-[480px] max-w-full xl:w-[628px]"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Hero Section End -->
-
-      <!-- Search Section Start -->
-      <section class="relative z-10 mt-5 lg:-mt-10 xl:-mt-16">
-        <div class="container">
-          <div class="rounded-3xl bg-background p-6 shadow-md lg:p-8">
-            <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
-              <div class="flex items-center justify-center gap-2 text-center">
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 20 20"
-                  aria-hidden="true"
-                  class="text-primary"
-                  height="24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6 5v1H4.667a1.75 1.75 0 00-1.743 1.598l-.826 9.5A1.75 1.75 0 003.84 19H16.16a1.75 1.75 0 001.743-1.902l-.826-9.5A1.75 1.75 0 0015.333 6H14V5a4 4 0 00-8 0zm4-2.5A2.5 2.5 0 007.5 5v1h5V5A2.5 2.5 0 0010 2.5zM7.5 10a2.5 2.5 0 005 0V8.75a.75.75 0 011.5 0V10a4 4 0 01-8 0V8.75a.75.75 0 011.5 0V10z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <p
-                  class="text-base font-semibold leading-8 text-foreground md:text-lg"
-                >
-                  Cari motor yang kamu inginkan
-                </p>
-              </div>
-              <form
-                id="search-form"
-                class="mt-8 flex flex-col items-center justify-center gap-3 md:flex-row"
+            <form class="ml-auto space-y-4">
+              <input
+                type="text"
+                placeholder="Name"
+                class="w-full rounded-md bg-secondary px-4 py-3 text-sm text-muted-foreground outline-primary focus:bg-transparent"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="w-full rounded-md bg-secondary px-4 py-3 text-sm text-muted-foreground outline-primary focus:bg-transparent"
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                class="w-full rounded-md bg-secondary px-4 py-3 text-sm text-muted-foreground outline-primary focus:bg-transparent"
+              />
+              <textarea
+                placeholder="Message"
+                rows="6"
+                class="w-full rounded-md bg-secondary px-4 pt-3 text-sm text-muted-foreground outline-primary focus:bg-transparent"
+              ></textarea>
+              <button
+                type="button"
+                class="!mt-6 w-full rounded-md bg-primary px-4 py-3 text-sm font-semibold tracking-wide text-background transition-all duration-300 ease-in-out hover:bg-primary/90"
               >
-                <div class="w-full md:basis-1/2">
-                  <select
-                    id="merek"
-                    class="block h-12 w-full rounded-lg border border-input bg-background px-4 py-2.5 text-base text-foreground focus:outline-ring focus:ring-primary"
-                    onchange="getModel()"
-                  >
-                    <option>Pilih merek</option>
-                  </select>
-                </div>
-                <div class="w-full md:basis-1/2">
-                  <select
-                    id="model"
-                    class="block h-12 w-full cursor-not-allowed rounded-lg border border-input bg-background px-4 py-2.5 text-base text-foreground focus:outline-ring focus:ring-primary"
-                    disabled
-                  >
-                    <option>Pilih model</option>
-                  </select>
-                </div>
-                <div class="w-full basis-1/5">
-                  <button
-                    type="button"
-                    class="shadow-xs flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-center transition-all duration-500 hover:bg-primary/90"
-                    onclick="search()"
-                  >
-                    <p class="text-base font-semibold text-background">Cari</p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="text-background"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </button>
-                </div>
-              </form>
-            </div>
+                Kirim
+              </button>
+            </form>
           </div>
         </div>
       </section>
-      <!-- Search Section End -->
-
-      <!-- Product Section Start -->
-      <section class="mt-[60px]" id="product">
-        <div class="container">
-          <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-            <span class="font-bold text-primary" id="total-motor"></span>
-            tersedia untuk dibeli
-          </h2>
-
-          <div
-            class="my-10 grid grid-cols-1 gap-y-3 sm:grid-cols-3 sm:gap-x-4 sm:gap-y-5 lg:grid-cols-4 xl:gap-6 xs:grid-cols-2 xs:gap-x-3 xs:gap-y-4"
-            id="product-list"
-          ></div>
-
-          <!-- Pagination -->
-          <div
-            class="flex items-center justify-between border-t border-border px-4 py-3 sm:px-6"
-            id="wrap-pagination"
-          >
-            <div
-              class="flex flex-1 items-center justify-center sm:justify-between"
-            >
-              <div class="hidden sm:block">
-                <p class="text-sm text-gray-700">
-                  Menampilkan
-                  <span class="font-medium" id="start-item"></span>
-                  -
-                  <span class="font-medium" id="end-item"></span>
-                  dari
-                  <span class="font-medium" id="total-item"></span>
-                  hasil
-                </p>
-              </div>
-              <div>
-                <nav
-                  class="isolate inline-flex -space-x-px rounded-md shadow-sm"
-                  aria-label="Pagination"
-                >
-                  <button
-                    type="button"
-                    class="relative inline-flex items-center rounded-l-md px-2 py-2 text-muted-foreground ring-1 ring-inset ring-gray-300 hover:bg-primary/10 focus:z-20 focus:outline-offset-0"
-                    id="prev-page"
-                    onclick="showPrevPage()"
-                  >
-                    <svg
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                  <div id="pagination"></div>
-                  <button
-                    type="button"
-                    class="relative inline-flex items-center rounded-l-md px-2 py-2 text-muted-foreground ring-1 ring-inset ring-gray-300 hover:bg-primary/10 focus:z-20 focus:outline-offset-0"
-                    id="next-page"
-                    onclick="showNextPage()"
-                  >
-                    <svg
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Product Section End -->
+      <!-- Kontak Section End -->
 
       <!-- Footer Start -->
-      <footer class="pb-12 pt-28">
+      <footer class="pb-12 pt-32">
         <div class="container">
           <div class="flex flex-col gap-x-16 gap-y-8 pb-8 lg:flex-row">
             <div class="flex-1">
@@ -449,6 +307,5 @@
     </main>
     <script type="text/javascript" src="./js/global.js"></script>
     <script type="text/javascript" src="./js/products.js"></script>
-    <script type="text/javascript" src="./js/home.js"></script>
   </body>
 </html>

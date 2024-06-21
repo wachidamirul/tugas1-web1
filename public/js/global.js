@@ -49,25 +49,29 @@ const navMenu = () => {
   let uniqueBrands = [...new Set(brands)];
 
   let menu = uniqueBrands.map((brand) => {
+    // Filter data for the current brand
+    let filteredData = data.filter((item) => item.model.brand === brand);
+
     return {
       brand: brand,
-      models: data
-        .filter((item) => item.model.brand === brand)
-        .map((item) => item.model.name),
+      models: filteredData.map((item) => ({
+        id: item.id,
+        name: item.model.name,
+      })),
     };
   });
 
   menu.map((item) => {
-    navigation.innerHTML += `<li class="group relative wrap-menu"><a class="text-sm font-medium group-hover:text-primary py-3 text-foreground"href=#>${item.brand}</a><ul class="-translate-x-1/2 absolute bg-white duration-300 group-hover:md:block group-hover:opacity-100 hidden hover:md:block left-1/2 mt-2 opacity-0 overflow-hidden rounded-md shadow-lg submenu transform transition-opacity w-40">
+    navigation.innerHTML += `<li class="group relative wrap-menu"><a class="text-sm font-medium group-hover:text-primary py-3 text-foreground" href=#>${item.brand}</a><ul class="-translate-x-1/2 absolute bg-white duration-300 group-hover:md:block group-hover:opacity-100 hidden hover:md:block left-1/2 mt-2 opacity-0 overflow-hidden rounded-md shadow-lg submenu transform transition-opacity w-40">
     ${item.models
       .map((model) => {
-        return `<li><a class="text-sm block hover:bg-secondary px-4 py-2"href=#>${model}</a></li>`;
+        return `<li><a onclick="selectedMenu('${model.id}')" class="text-sm block hover:bg-secondary px-4 py-2" href=#>${model.name}</a></li>`;
       })
       .join("")}</ul></li>`;
 
     mobNavMenu.innerHTML += `<li class="accordion-item"><button class="accordion-header flex w-full items-center justify-between py-2 text-left text-sm font-semibold text-foreground" aria-expanded="false" onclick="toggleAccordion(this)"><span>${item.brand}</span><svg class="h-5 w-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><ul class="accordion-content transition-max-height ml-1 max-h-0 overflow-hidden border-l border-border duration-300 ease-in-out">${item.models
       .map((model) => {
-        return `<li><a class="block px-4 py-2 text-sm" href="#">${model}</a></li>`;
+        return `<li><a onclick="selectedMenu('${model.id}')" class="block px-4 py-2 text-sm" href="javascript:void(0)">${model.name}</a></li>`;
       })
       .join("")}</ul></li>`;
   });
@@ -135,4 +139,11 @@ const formatDecimal = (number) => {
     style: "decimal",
     minimumFractionDigits: 0,
   }).format(number);
+};
+
+const selectedMenu = (id) => {
+  const database = JSON.parse(localStorage.getItem("database"));
+  const selectedProduct = database.filter((item) => item.id == id);
+  localStorage.setItem("selected-product", JSON.stringify(selectedProduct));
+  window.location.href = "./detail.html";
 };

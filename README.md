@@ -24,7 +24,7 @@ akan memunculkan tampilan form buku tamu yang isinya nama,email dan pertanyaan
 
 ## Getting started
 
-Website sederhana yang dikembangkan untuk platform jual beli motor. Menggunakan file [data.js](./public/js/data.js) sebagai sumber data untuk mengelola informasi produk. Fitur utama mencakup pencarian motor berdasarkan brand dan model, serta menampilkan detail dari setiap motor yang tersedia.
+Website sederhana yang dikembangkan untuk platform jual beli motor. Menggunakan file [products.js](./public/js/products.js) sebagai sumber data untuk mengelola informasi produk. Fitur utama mencakup pencarian motor berdasarkan brand dan model, serta menampilkan detail dari setiap motor yang tersedia.
 
 ### Installation
 
