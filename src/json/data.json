@@ -108,21 +108,93 @@
     "vehicle_images": "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2022011109443040020G78018.png"
   },
   {
-    "id": "b8115774-6c87-498c-93ab-a8fd04584e7b",
-    "price": 33150000,
+    "id": "2ea03f17-e5c9-4793-9fae-9c2dae7fec20",
+    "price": 13500000,
     "model": {
-      "brand": "Suzuki",
-      "name": "GSXR150",
-      "year": 2015,
-      "color": "Merah",
+      "brand": "Yamaha",
+      "name": "MioM3",
+      "year": 2023,
+      "color": "Hitam",
       "mileage": 35911
     },
-    "city": "Jakarta Selatan",
-    "service_book": true,
+    "city": "Bogor",
+    "service_book": false,
     "stnk": true,
     "bpkb": true,
-    "title": "All New Vixion 155 R",
+    "title": "Yamaha MioM3 2023",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
-    "vehicle_images": "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2022011109443040020G78018.png"
+    "vehicle_images": "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2023120410412871912O88484.png"
+  },
+  {
+    "id": "e654e860-f5a0-41ef-a528-ad8e8fb6f9fa",
+    "price": 23500000,
+    "model": {
+      "brand": "Yamaha",
+      "name": "NMAX155",
+      "year": 2023,
+      "color": "Putih",
+      "mileage": 65672
+    },
+    "city": "Depok",
+    "service_book": false,
+    "stnk": true,
+    "bpkb": true,
+    "title": "Yamaha NMAX155 2023",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2022021512553415943O51296.png"
+  },
+  {
+    "id": "1e44de2e-b9be-416c-8216-40080748b9ab",
+    "price": 16300000,
+    "model": {
+      "brand": "Suzuki",
+      "name": "GSX-R150",
+      "year": 2019,
+      "color": "Biru",
+      "mileage": 44723
+    },
+    "city": "Depok",
+    "service_book": false,
+    "stnk": true,
+    "bpkb": true,
+    "title": "Suzuki GSX-R150 2019",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://www.suzukicdn.com/assets/static/img/variant/gsx-blue.webp"
+  },
+  {
+    "id": "0577c591-7707-4450-b997-b49d2affb853",
+    "price": 10000000,
+    "model": {
+      "brand": "Suzuki",
+      "name": "SatriaF150",
+      "year": 2016,
+      "color": "Hitam",
+      "mileage": 20000
+    },
+    "city": "Bekasi Kota",
+    "service_book": false,
+    "stnk": true,
+    "bpkb": true,
+    "title": "Suzuki SatriaF150 2016",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://www.suzukicdn.com/assets/static/img/variant/black4.webp"
+  },
+  {
+    "id": "e11e7ca5-2b1a-442a-891d-ad5084d58961",
+    "price": 10000000,
+    "model": {
+      "brand": "Suzuki",
+      "name": "ADDRESS-Playful",
+      "year": 2023,
+      "color": "Putih",
+      "mileage": 20000
+    },
+    "city": "Bekasi Kota",
+    "service_book": false,
+    "stnk": true,
+    "bpkb": true,
+    "title": "Suzuki ADDRESS Playful 2023",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quam ratione minus consequunturaccusantium, adipisci repudiandae cumque cum. Eos doloremque quaerat debitis necessitatibus eligendi, maiores distinctio. Temporibus sunt adipisci vitae! Quod cumque dolores excepturi ducimus voluptates molestiae, ipsam ut commodi doloremque velit non dolore ipsa quam animi, explicabo iste culpa nisi maiores temporibus ullam veritatis nihil soluta incidunt. Alias, ipsum! Voluptatum consequuntur quae libero eum soluta fugit nesciunt natus facilis vitae, dicta commodi odit amet nihil, reprehenderit et rem dolor cupiditate! Expedita, porro recusandae! Nostrum dolores fugit enim vero placeat!",
+    "vehicle_images": "https://www.suzukicdn.com/assets/static/img/variant/MOTOR_PUTIH2.webp"
   }
 ]
