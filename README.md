@@ -6,6 +6,7 @@ Matkul : Pemrograman Web 1 </br> Prodi : Teknik Informatika
 
 - [Task](#task)
 - [Getting started](#getting-started)
+- [Demo](#demo)
 
 ## Task
 
@@ -56,3 +57,6 @@ Change **_global.css_** with **_style.css_**
 ```shell
 pnpm start
 ```
+
+## Demo
+### [DEMO](https://wachidamirul.github.io/tugas1-web1/)
